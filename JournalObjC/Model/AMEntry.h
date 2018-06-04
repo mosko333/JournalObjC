@@ -10,4 +10,9 @@
 
 @interface AMEntry : NSObject
 
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *body;
+
+- (instancetype) initWithTitle:(NSString *)title andBody:(NSString *)body;
+
 @end

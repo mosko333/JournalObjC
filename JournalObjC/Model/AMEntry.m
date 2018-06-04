@@ -10,4 +10,25 @@
 
 @implementation AMEntry
 
+- (instancetype) initWithTitle:(NSString *)title andBody:(NSString *)body {
+    self = [super init];
+    if (self) {
+        _title = title;
+        _body = body;
+    }
+    return self;
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if (![object isKindOfClass:[AMEntry class]]) { return NO; }
+    AMEntry *entry = object;
+    
+    if (entry.title != self.title) { return NO; }
+    if (entry.body != self.body ) { return NO; }
+    
+    return YES;
+}
+
+
 @end
