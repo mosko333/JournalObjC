@@ -13,6 +13,7 @@
 		7E4DD49420C5E4FC00B71AF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DD49220C5E4FC00B71AF5 /* LaunchScreen.storyboard */; };
 		7E4DD49720C5E4FD00B71AF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DD49620C5E4FD00B71AF5 /* main.m */; };
 		7E4DD4A420C5E9C400B71AF5 /* AMEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DD4A320C5E9C400B71AF5 /* AMEntry.m */; };
+		7E4DD4A720C5EE7500B71AF5 /* AMEntryModelConroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DD4A620C5EE7500B71AF5 /* AMEntryModelConroller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		7E4DD49620C5E4FD00B71AF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E4DD4A220C5E9C400B71AF5 /* AMEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMEntry.h; sourceTree = "<group>"; };
 		7E4DD4A320C5E9C400B71AF5 /* AMEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMEntry.m; sourceTree = "<group>"; };
+		7E4DD4A520C5EE7500B71AF5 /* AMEntryModelConroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMEntryModelConroller.h; sourceTree = "<group>"; };
+		7E4DD4A620C5EE7500B71AF5 /* AMEntryModelConroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMEntryModelConroller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 		7E4DD49F20C5E59900B71AF5 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7E4DD4A520C5EE7500B71AF5 /* AMEntryModelConroller.h */,
+				7E4DD4A620C5EE7500B71AF5 /* AMEntryModelConroller.m */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				7E4DD49720C5E4FD00B71AF5 /* main.m in Sources */,
 				7E4DD4A420C5E9C400B71AF5 /* AMEntry.m in Sources */,
 				7E4DD48920C5E4FC00B71AF5 /* AppDelegate.m in Sources */,
+				7E4DD4A720C5EE7500B71AF5 /* AMEntryModelConroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
