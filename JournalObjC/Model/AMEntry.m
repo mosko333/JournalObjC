@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  AMEntry.m
 //  JournalObjC
 //
 //  Created by Adam on 04/06/2018.
 //  Copyright © 2018 Adam Moskovich. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "AMEntry.h"
 
-@interface ViewController : UIViewController
-
+@implementation AMEntry
 
 @end
-
