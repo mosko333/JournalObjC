@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Entry List Table View Controller-->
         <scene sceneID="hAd-Bw-2l9">
             <objects>
-                <tableViewController id="eLW-oB-JlY" sceneMemberID="viewController">
+                <tableViewController id="eLW-oB-JlY" customClass="AMEntryListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZYD-So-JtB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="gob-20-TOF" kind="show" identifier="toDetailSegue" id="WES-2Z-Nlc"/>
+                                    <segue destination="gob-20-TOF" kind="show" identifier="toEditEntry" id="9rM-qm-31P"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -50,17 +50,22 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Rcm-jS-LBI">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5jc-Ou-dni"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5jc-Ou-dni">
+                            <connections>
+                                <action selector="addEntryBtnPressed:" destination="eLW-oB-JlY" id="pZR-Ne-z52"/>
+                                <segue destination="gob-20-TOF" kind="show" id="ifO-jP-kd1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCg-Z5-Ffu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="726" y="2"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="xqv-18-GdL">
             <objects>
-                <viewController id="gob-20-TOF" sceneMemberID="viewController">
+                <viewController id="gob-20-TOF" customClass="AMEntryDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E1H-ZE-KVD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,6 +104,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8aU-uG-FHS"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="PoU-OA-BUR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pat-tA-CoU">
+                            <connections>
+                                <action selector="addEntryBtnPressed:" destination="gob-20-TOF" id="fcF-ZC-NnY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bodyTextView" destination="6cK-7C-Uq4" id="Vja-7h-fzL"/>
+                        <outlet property="nameTextField" destination="1tL-xA-0RS" id="zIV-s1-ryb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L93-0p-2Sk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,4 +143,7 @@
     <resources>
         <image name="noteListHeader" width="2126" height="310"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="9rM-qm-31P"/>
+    </inferredMetricsTieBreakers>
 </document>

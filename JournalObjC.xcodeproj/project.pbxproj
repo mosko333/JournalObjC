@@ -14,6 +14,8 @@
 		7E4DD49720C5E4FD00B71AF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DD49620C5E4FD00B71AF5 /* main.m */; };
 		7E4DD4A420C5E9C400B71AF5 /* AMEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DD4A320C5E9C400B71AF5 /* AMEntry.m */; };
 		7E4DD4A720C5EE7500B71AF5 /* AMEntryModelConroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DD4A620C5EE7500B71AF5 /* AMEntryModelConroller.m */; };
+		7E4DD4AA20C5F45B00B71AF5 /* AMEntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DD4A920C5F45B00B71AF5 /* AMEntryListTableViewController.m */; };
+		7E4DD4AD20C5F47900B71AF5 /* AMEntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DD4AC20C5F47900B71AF5 /* AMEntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		7E4DD4A320C5E9C400B71AF5 /* AMEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMEntry.m; sourceTree = "<group>"; };
 		7E4DD4A520C5EE7500B71AF5 /* AMEntryModelConroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMEntryModelConroller.h; sourceTree = "<group>"; };
 		7E4DD4A620C5EE7500B71AF5 /* AMEntryModelConroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMEntryModelConroller.m; sourceTree = "<group>"; };
+		7E4DD4A820C5F45B00B71AF5 /* AMEntryListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMEntryListTableViewController.h; sourceTree = "<group>"; };
+		7E4DD4A920C5F45B00B71AF5 /* AMEntryListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMEntryListTableViewController.m; sourceTree = "<group>"; };
+		7E4DD4AB20C5F47900B71AF5 /* AMEntryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMEntryDetailViewController.h; sourceTree = "<group>"; };
+		7E4DD4AC20C5F47900B71AF5 /* AMEntryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMEntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 		7E4DD4A020C5E5C100B71AF5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7E4DD4A820C5F45B00B71AF5 /* AMEntryListTableViewController.h */,
+				7E4DD4A920C5F45B00B71AF5 /* AMEntryListTableViewController.m */,
+				7E4DD4AB20C5F47900B71AF5 /* AMEntryDetailViewController.h */,
+				7E4DD4AC20C5F47900B71AF5 /* AMEntryDetailViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,8 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E4DD49720C5E4FD00B71AF5 /* main.m in Sources */,
+				7E4DD4AA20C5F45B00B71AF5 /* AMEntryListTableViewController.m in Sources */,
 				7E4DD4A420C5E9C400B71AF5 /* AMEntry.m in Sources */,
 				7E4DD48920C5E4FC00B71AF5 /* AppDelegate.m in Sources */,
+				7E4DD4AD20C5F47900B71AF5 /* AMEntryDetailViewController.m in Sources */,
 				7E4DD4A720C5EE7500B71AF5 /* AMEntryModelConroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
