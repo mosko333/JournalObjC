@@ -16,7 +16,7 @@
 + (AMEntryModelConroller *)shared;
 
 // source of truth
-@property (nonatomic, strong, readonly) NSArray *Entries;
+@property (nonatomic, strong, readonly) NSArray *entries;
 
 //CRUD
 // create entry

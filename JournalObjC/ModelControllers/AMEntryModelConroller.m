@@ -50,4 +50,10 @@
     [self.internalEntries removeObject:entry];
 }
 
+#pragma mark - properties
+- (NSArray *)entries
+{
+    return self.internalEntries;
+}
+
 @end
