@@ -7,6 +7,8 @@
 //
 
 #import "AMEntryDetailViewController.h"
+#import "AMEntry.h"
+#import "AMEntryModelConroller.h"
 
 @interface AMEntryDetailViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
@@ -16,7 +18,9 @@
 
 @implementation AMEntryDetailViewController
 - (IBAction)addEntryBtnPressed:(UIBarButtonItem *)sender {
-    NSLog(@"Add btn pressed");
+    
+    [[AMEntryModelConroller shared] createEntryWithTitle:_nameTextField.text andBody:_bodyTextView.text];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad {
